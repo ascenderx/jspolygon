@@ -20,10 +20,5 @@ canvas
 
 input[type=range]
 {
-	width: 200px;
-}
-
-#lblNumSides
-{
-	color: #ff7f00;
+	width: 350px;
 }
