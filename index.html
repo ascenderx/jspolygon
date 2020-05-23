@@ -8,50 +8,66 @@
     <meta name="theme-color" content="#000000"/>
   </head>
   <body>
-    <div class="meta-wrapper">
-      <canvas id="canvas" width="500px" height="500px"></canvas>
-      <table>
-        <tr>
-          <td>Edges:</td>
-          <td>
-            <input type="range" id="sldNumSides"/>
-          </td>
-          <td>
-            <label id="lblNumSides"></label>
-          </td>
-        </tr>
-        <tr>
-          <td>Radius:</td>
-          <td>
-            <input type="range" id="sldRadius"/>
-          </td>
-          <td>
-            <label id="lblRadius"></label>
-          </td>
-        </tr>
-        <tr>
-          <td>Speed:</td>
-          <td>
-            <input type="range" id="sldSpeed"/>
-          </td>
-          <td>
-            <label id="lblSpeed"></label>
-          </td>
-        </tr>
-        <tr>
-          <td colspan="3">
-            <label>
-              Polygram: <input type="checkbox" id="chkPolygram" />
-            </label>
-            <label>
-              Circle: <input type="checkbox" id="chkCircle" />
-            </label>
-          </td>
-        </tr>
-      </table>
+    <div class="content-wrapper" id="divContent">
+      <div class="canvas-container">
+        <canvas id="cvs"></canvas>
+      </div>
+      <div class="controls-container">
+        <table>
+          <tbody>
+            <tr>
+              <td>Edges</td>
+              <td>
+                <input type="range" id="sldNumSides"/>
+              </td>
+              <td class="right-justify">
+                <label id="lblNumSides"></label>
+              </td>
+            </tr>
+            <tr>
+              <td>Radius</td>
+              <td>
+                <input type="range" id="sldRadius"/>
+              </td>
+              <td class="right-justify">
+                <label id="lblRadius"></label>
+              </td>
+            </tr>
+            <tr>
+              <td>Speed</td>
+              <td>
+                <input type="range" id="sldSpeed"/>
+              </td>
+              <td class="right-justify">
+                <label id="lblSpeed"></label>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="3">
+                <label class="clickable">
+                  <input type="checkbox" id="chkPolygram"/>
+                  Display polygram
+                </label>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="3">
+                <label class="clickable">
+                  <input type="checkbox" id="chkCircle"/>
+                  Display circumscribing circle
+                </label>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </div>
     
-    <script type="text/javascript" src="src/script.js"></script>
+    <script src="src/utils.js"></script>
+    <script src="src/polygon.js"></script>
+    <script src="src/loop.js"></script>
+    <script src="src/app.js"></script>
+    <script src="src/main.js"></script>
   </body>
 </html>
 
