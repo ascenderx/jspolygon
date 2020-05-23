@@ -1,72 +1,57 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<title>Polygon Generator</title>
-		<link rel="stylesheet" href="styles.css" />
-		<meta name="viewport"
-              content="width=device-width">
-        <meta name="theme-color"
-              content="#000000" />
-	</head>
-	<body>
-       <div>
-         <table>
-            <tr>
-               <td colspan="3">
-                  <canvas id="canvas" width="500px" height="500px">
-			      </canvas>
-			   </td>
-			   <td></td>
-			   <td></td>
-			</tr>
-			<tr>
-               <td>
-			      Edges:
-			   </td>
-			   <td>
-			      <input type="range" id="sldNumSides" />
-			   </td>
-			   <td>
-			      <label id="lblNumSides"></label>
-			   </td>
-			</tr>
-			<tr>
-			   <td>
-                  Radius:
-               </td>
-               <td>
-                  <input type="range" id="sldRadius" />
-               </td>
-               <td>
-                  <label id="lblRadius" />
-               </td>
-			</tr>
-			<tr>
-			   <td>
-                  Speed:
-               </td>
-               <td>
-                  <input type="range" id="sldSpeed" />
-               </td>
-               <td>
-                  <label id="lblSpeed" />
-               </td>
-			</tr>
-			<tr>
-		       <td colspan="3">
-			      <label>
-			         Polygram:
-			         <input type="checkbox" id="chkPolygram" />
-			      </label>
-			      <label>
-				     Circle:
-				     <input type="checkbox" id="chkCircle" />
-                  </label>
-               </td>
-		    </tr>
-         </table>
-      </div>
-      <script type="text/javascript" src="script.js">
-</script>
-	</body>
+<html lang="en-US">
+  <head>
+    <title>Polygon Generator</title>
+    <meta charset="UTF-8"/>
+    <link rel="stylesheet" href="css/styles.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="theme-color" content="#000000"/>
+  </head>
+  <body>
+    <div class="meta-wrapper">
+      <canvas id="canvas" width="500px" height="500px"></canvas>
+      <table>
+        <tr>
+          <td>Edges:</td>
+          <td>
+            <input type="range" id="sldNumSides"/>
+          </td>
+          <td>
+            <label id="lblNumSides"></label>
+          </td>
+        </tr>
+        <tr>
+          <td>Radius:</td>
+          <td>
+            <input type="range" id="sldRadius"/>
+          </td>
+          <td>
+            <label id="lblRadius"></label>
+          </td>
+        </tr>
+        <tr>
+          <td>Speed:</td>
+          <td>
+            <input type="range" id="sldSpeed"/>
+          </td>
+          <td>
+            <label id="lblSpeed"></label>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="3">
+            <label>
+              Polygram: <input type="checkbox" id="chkPolygram" />
+            </label>
+            <label>
+              Circle: <input type="checkbox" id="chkCircle" />
+            </label>
+          </td>
+        </tr>
+      </table>
+    </div>
+    
+    <script type="text/javascript" src="src/script.js"></script>
+  </body>
 </html>
+
